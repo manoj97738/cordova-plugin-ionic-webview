@@ -42,16 +42,16 @@
       <allow-navigation href="http://localhost/*"/>
       <allow-navigation href="https://localhost/*"/>
       <allow-navigation href="ionic://*"/>
-      <preference name="webView" value="com.ionicframework.cordova.webview.IonicWebViewEngine"/>
+      <preference name="webView" value="com.jseval.cordova.superchargedwebview.IonicWebViewEngine"/>
       <feature name="IonicWebView">
-          <param name="android-package" value="com.ionicframework.cordova.webview.IonicWebView"/>
+          <param name="android-package" value="com.jseval.cordova.superchargedwebview.IonicWebView"/>
       </feature>
     </config-file>
-    <source-file src="src/android/com/ionicframework/cordova/webview/IonicWebViewEngine.java" target-dir="src/com/ionicframework/cordova/webview"/>
-    <source-file src="src/android/com/ionicframework/cordova/webview/IonicWebView.java" target-dir="src/com/ionicframework/cordova/webview"/>
-    <source-file src="src/android/com/ionicframework/cordova/webview/AndroidProtocolHandler.java" target-dir="src/com/ionicframework/cordova/webview"/>
-    <source-file src="src/android/com/ionicframework/cordova/webview/UriMatcher.java" target-dir="src/com/ionicframework/cordova/webview"/>
-    <source-file src="src/android/com/ionicframework/cordova/webview/WebViewLocalServer.java" target-dir="src/com/ionicframework/cordova/webview"/>
+    <source-file src="src/android/com/jseval/cordova/superchargedwebview/IonicWebViewEngine.java" target-dir="src/com/jseval/cordova/webview"/>
+    <source-file src="src/android/com/jseval/cordova/superchargedwebview/IonicWebView.java" target-dir="src/com/jseval/cordova/webview"/>
+    <source-file src="src/android/com/jseval/cordova/superchargedwebview/AndroidProtocolHandler.java" target-dir="src/com/jseval/cordova/webview"/>
+    <source-file src="src/android/com/jseval/cordova/superchargedwebview/UriMatcher.java" target-dir="src/com/jseval/cordova/webview"/>
+    <source-file src="src/android/com/jseval/cordova/superchargedwebview/WebViewLocalServer.java" target-dir="src/com/jseval/cordova/webview"/>
   </platform>
 
   <!-- ios -->

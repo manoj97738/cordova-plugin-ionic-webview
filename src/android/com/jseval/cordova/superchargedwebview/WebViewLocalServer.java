@@ -13,7 +13,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
  */
-package com.ionicframework.cordova.webview;
+package com.jseval.cordova.superchargedwebview;
 
 import android.content.Context;
 import android.net.Uri;

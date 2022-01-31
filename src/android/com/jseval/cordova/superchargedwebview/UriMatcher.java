@@ -1,4 +1,4 @@
-package com.ionicframework.cordova.webview;
+package com.jseval.cordova.superchargedwebview;
 
 /*
  * Copyright (C) 2006 The Android Open Source Project

@@ -32,9 +32,9 @@ jobs:
     <<: *defaults
     environment:
       GIT_AUTHOR_NAME: Ionitron
-      GIT_AUTHOR_EMAIL: hi@ionicframework.com
+      GIT_AUTHOR_EMAIL: manoj97738@gmail.com
       GIT_COMMITTER_NAME: Ionitron
-      GIT_COMMITTER_EMAIL: hi@ionicframework.com
+      GIT_COMMITTER_EMAIL: manoj97738@gmail.com
     steps:
       - add_ssh_keys:
           fingerprints:

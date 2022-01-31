@@ -1,4 +1,4 @@
-package com.ionicframework.cordova.webview;
+package com.jseval.cordova.superchargedwebview;
 
 import android.app.Activity;
 import android.content.Context;
@@ -74,6 +74,9 @@ public class IonicWebViewEngine extends SystemWebViewEngine {
       final WebSettings settings = webView.getSettings();
       int mode = preferences.getInteger("MixedContentMode", 0);
       settings.setMixedContentMode(mode);
+      // added yodlee handler interface
+      webView.getSettings().setJavaScriptEnabled(true);
+      webView.addJavascriptInterface(new JSInterfaceHandler(this), "YWebViewHandler");
     }
     SharedPreferences prefs = cordova.getActivity().getApplicationContext().getSharedPreferences(IonicWebView.WEBVIEW_PREFS_NAME, Activity.MODE_PRIVATE);
     String path = prefs.getString(IonicWebView.CDV_SERVER_PATH, null);
@@ -170,3 +173,17 @@ public class IonicWebViewEngine extends SystemWebViewEngine {
     return this.localServer.getBasePath();
   }
 }
+ public class JSInterfaceHandler {
+    Context mContext;
+
+    /** Instantiate the interface and set the context */
+    JSInterfaceHandler(Context c) {
+        mContext = c;
+    }
+
+    @JavascriptInterface 
+    public void postMessage(final String data) {
+        Log.d("FL:MESSAGE", data)
+    }
+ }
+ }

@@ -1,4 +1,4 @@
-package com.ionicframework.cordova.webview;
+package com.jseval.cordova.superchargedwebview;
 
 import android.app.Activity;
 import android.content.SharedPreferences;
